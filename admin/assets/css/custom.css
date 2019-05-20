@@ -1,0 +1,91 @@
+.img-upload { height: 260px }
+#img-upload { width: 100%; height: 100%; object-fit: cover; display: block }
+.img-upload-fav { width: 28px !important; height: 28px !important; object-fit: cover; display: block }
+/*input { pointer-events: none }*/
+.img-responsive { width: 100%; height: 100%; object-fit: cover; display: block }
+#customers-testimonials .item-details { background-color: #333333; color: #fff; padding: 20px 10px; text-align: left }
+#customers-testimonials .item-details h5 { margin: 0 0 15px; font-size: 18px; line-height: 18px }
+#customers-testimonials .item-details h5 span { float: right }
+#customers-testimonials .item-details p { font-size: 14px }
+#customers-testimonials .item { text-align: center; margin-bottom: 80px }
+.owl-carousel .owl-nav [class*='owl-'] { transition: all .3s ease }
+.owl-carousel .owl-nav [class*='owl-'].disabled:hover { background-color: #D6D6D6 }
+.owl-carousel { position: relative }
+.owl-carousel .owl-next, .owl-carousel .owl-prev { width: 50px; height: 50px; line-height: 50px; border-radius: 50%; position: absolute; top: 30%; font-size: 20px; color: #fff; border: 1px solid #ddd; text-align: center }
+.owl-carousel .owl-prev { left: -70px }
+.owl-carousel .owl-next { right: -70px }
+.dt-buttons .dt-button { background-image: none; background: #ffffff; color: #373757; border-color: #e7e7e7; margin-right: 10px; padding: 7px 20px; border-radius: 0px }
+.dt-buttons .dt-button:hover:not(.disabled), .dt-buttons .dt-button:focus, .dt-buttons .dt-button.active { background-image: none; background: #5873fe; color: #ffffff }
+button.dt-button:hover:not(.disabled), div.dt-button:hover:not(.disabled), a.dt-button:hover:not(.disabled) { background-color: #5873fe; background-image: none; border: 1px solid #5873fe; box-shadow: none; color: #ffffff }
+button.dt-button:focus:not(.disabled), div.dt-button:focus:not(.disabled), a.dt-button:focus:not(.disabled) { background-color: #5873fe; background-image: none; border: 1px solid #5873fe; box-shadow: none; color: #ffffff }
+button.dt-button:active:hover:not(.disabled):not(.disabled), button.dt-button.active:hover:not(.disabled):not(.disabled), div.dt-button:active:hover:not(.disabled):not(.disabled), div.dt-button.active:hover:not(.disabled):not(.disabled), a.dt-button:active:hover:not(.disabled):not(.disabled), a.dt-button.active:hover:not(.disabled):not(.disabled) { background-color: #5873fe; background-image: none; border: 1px solid #5873fe; box-shadow: none; color: #ffffff }
+button.dt-button:active:not(.disabled), button.dt-button.active:not(.disabled), div.dt-button:active:not(.disabled), div.dt-button.active:not(.disabled), a.dt-button:active:not(.disabled), a.dt-button.active:not(.disabled) { background-color: #5873fe; background-image: none; border: 1px solid #5873fe; box-shadow: none; color: #ffffff }
+.responsive-table { width: 100%; border-collapse: collapse }
+.responsive-table tr:nth-of-type(odd) { background: #f3f3f3 }
+.responsive-table th { background: #333; color: white; font-weight: bold }
+.responsive-table td, .responsive-table th { padding: 6px; border: 1px solid #ccc; text-align: left }
+@media 
+only screen and (max-width:760px), (min-device-width:768px) and (max-device-width:1024px) {
+	.responsive-table table, .responsive-table thead, .responsive-table tbody, .responsive-table th, .responsive-table td, .responsive-table tr { display: block }
+	.responsive-table thead tr { position: absolute; top: -9999px; left: -9999px }
+	.responsive-table tr { margin-bottom: 10px; border-bottom: 1px solid #ccc }
+	.responsive-table td { border-bottom: none; position: relative; padding-left: 30% }
+	.responsive-table td:before { position: absolute; top: 0px; left: 0px; width: 25%; height: 100%; padding: 0 10px 0 5px; display: flex; align-items: center; white-space: nowrap; background-color: #333; color: #fff }
+	.responsive-table td:nth-of-type(1):before { content: "Durum" }
+	.responsive-table td:nth-of-type(2):before { content: "Ürün" }
+	.responsive-table td:nth-of-type(3):before { content: "Eposta" }
+	.responsive-table td:nth-of-type(4):before { content: "Telefon" }
+	.responsive-table td:nth-of-type(5):before { content: "Tarih" }
+}
+.pKart { height: 160px; display: grid; grid-template-columns: 35% min-content 1fr max-content; grid-template-rows: min-content 1fr min-content; grid-gap: 0.25rem; grid-template-areas: "pKonuResim pAvatar pKonuBaslik pTarih" "pKonuResim . pKonuAciklama pKonuAciklama" "pKonuResim . pKonuBilgi pKonuBilgi"; background: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, .07); border: 1px solid #dcdcdc; padding-right: 0.75rem; margin-bottom: 0.75rem; overflow: hidden; border-radius: 5px }
+.pKart .pKonuResim { grid-area: pKonuResim; margin: 0 }
+.pKart .pKonuResim img { width: 100%; height: 100%; object-fit: cover; display: block }
+.pKart .pAvatar { grid-area: pAvatar; position: absolute; margin-left: 10px }
+.pKart .pAvatar img { border-radius: 50%; width: 46px }
+.pKart .pKonuBaslik { grid-area: pKonuBaslik; margin: 0; font-weight: 400 }
+.pKart .pKonuBaslik a { text-decoration: none; color: #000; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden }
+.pKart .pKonuAciklama { grid-area: pKonuAciklama; line-height: 1.5; margin: 0 }
+.pKart .pKonuBilgi a.devam { padding: 10px 10px 10px 20px; border-radius: 50px 0 0; color: #fff; justify-content: center; letter-spacing: 1px; margin-bottom: 10px; text-align: center; text-transform: uppercase; text-decoration: none; font-weight: 600; font-size: 18px; margin-right: -0.75rem }
+.pKart .pKonuBilgi a.devam:hover { box-shadow: 0 0 20px 5px rgba(0, 0, 0, .2); color: #f2b632 }
+.pKart .pTarih { grid-area: pTarih; color: #525252; font-size: small }
+.pKart .pTarih i { margin-right: 0.25rem }
+.pKart .pKonuBilgi { grid-area: pKonuBilgi }
+.pKart .pAvatar, .pKart .pKonuBaslik, .pKart .pTarih { padding-top: 0.75rem }
+.pDetay { display: inline-block; width: 100% }
+.pDetay ul.pBilgi { margin: 0; padding: 0 }
+.pDetay ul.pBilgi li { float: right; color: #525252; font-size: 11px; padding-left: 10px; line-height: 12px; white-space: nowrap; text-overflow: ellipsis; display: block }
+.pDetay ul.pBilgi li:last-child { border: none; padding-right: 0; float: right; margin: 0 }
+.pDetay ul.pBilgi li.pKategori::before { content: "\f07b"; font-family: "Font Awesome 5 Pro"; padding-right: 3px; font-weight: 600 }
+.pDetay ul.pBilgi li.pYazar::before { content: "\f007"; font-family: "Font Awesome 5 Pro"; padding-right: 3px }
+.pDetay ul.pBilgi li.pYorum::before { content: "\f075"; font-family: "Font Awesome 5 Pro"; padding-right: 3px }
+@media (max-width:640px) {
+	.pKart:nth-child(odd) { width: 100% !important; height: 100% !important }
+	.pKart:nth-child(even) { width: 100% !important; height: 100% !important }
+	.pKart { width: 100% !important; grid-template-columns: min-content 1fr 1fr; grid-template-areas: "pAvatar pKonuBaslik pKonuBaslik" "pKonuResim pKonuResim pKonuResim" "pKonuAciklama pKonuAciklama pKonuAciklama" "pKonuBilgi pKonuBilgi pKonuBilgi"; grid-gap: 0; padding-right: 0 }
+	.pKart .pAvatar img { width: 42px }
+	.pKart .pTarih { padding: 0.40rem; position: absolute; border-radius: 50px; right: 0; margin: 0 20px 0 0; color: #000; background: #fff }
+	.pKart .pKonuBilgi a.devam { float: none; display: block; margin: 10px; padding: 10px 20px; border-radius: 50px; color: #fff; justify-content: center; letter-spacing: 1px; margin-bottom: 10px; text-align: center; text-transform: uppercase; text-decoration: none; font-weight: 600; font-size: 18px }
+	.pKart .pKonuAciklama { padding: 0 0.75rem }
+	.pKonuBaslik { padding: 15px 0.75rem; display: inline-block; width: 100%; border-bottom: 1px solid #80808047 }
+	.pDetay { padding: 0.35rem; border-top: 1px solid #80808047 }
+	.pDetay ul.pBilgi { display: flex; justify-content: flex-end }
+}
+footer.sticky-footer2 { display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; right: 0; bottom: 0; width: 100%; height: 80px; color: #fff; background-color: rgb(25, 31, 40) }
+footer.sticky-footer2 .copyright { line-height: 1; font-size: 0.8rem }
+@media (min-width:768px) {
+	footer.sticky-footer2 { width: 100% }
+}
+body.sidebar-toggled footer.sticky-footer2 { width: 100% }
+@media (min-width:768px) {
+	body.sidebar-toggled footer.sticky-footer2 { width: 100% }
+}
+div.sosyal { display: block; padding-top: 5px }
+div.sosyal a { color: #fff; background: rgb(255, 255, 255, 0.1); border-radius: 4px; text-align: center; text-decoration: none; font-family: "Font Awesome 5 Brands"; position: relative; display: inline-block; width: 36px; height: 36px; padding-top: 12px; margin: 0 2px; -o-transition: all .5s; -webkit-transition: all .5s; -moz-transition: all .5s; transition: all .5s; -webkit-font-smoothing: antialiased }
+div.sosyal a:hover { background: rgb(255, 255, 255, 0.03) }
+div.sosyal a span { color: #666; position: absolute; font-family: sans-serif; bottom: 0; left: -25px; right: -25px; padding: 5px 7px; font-size: 14px; border-radius: 2px; background: #fff; visibility: hidden; opacity: 0; -o-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55); -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55); -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55); transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55) }
+div.sosyal a span:before { content: ''; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #fff; position: absolute; bottom: -5px; left: 40px }
+div.sosyal a:hover span { bottom: 50px; visibility: visible; opacity: 1 }
+div.sosyal a:nth-of-type(1):before { content: '\f39e' }
+div.sosyal a:nth-of-type(2):before { content: '\f099' }
+div.sosyal a:nth-of-type(3):before { content: '\f16d' }
+div.sosyal a:nth-of-type(4):before { content: 'A' }
