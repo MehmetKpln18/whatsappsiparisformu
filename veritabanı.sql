@@ -183,7 +183,7 @@ CREATE TABLE `yoneticiler` (
 --
 
 INSERT INTO `yoneticiler` (`id`, `alanid`, `kullaniciadi`, `email`, `password`, `adiniz`, `aciklama`, `telefon`) VALUES
-(1, '', 'demo', 'demo@demo.com', 'demo', 'demo', 'Demo', 'demo'),
+(1, '', 'demo', 'demo@demo.com', 'demo', 'demo', 'Demo', 'demo');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
