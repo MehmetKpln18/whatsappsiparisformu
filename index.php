@@ -1,5 +1,5 @@
 <?php session_start(); ob_start(); ?>
-<?php include 'baglantilar/database.php'; ?>
+<?php include 'admin/baglantilar/database.php'; ?>
 <?php include 'baglantilar/fonksiyonlar.php'; ?>
 <!DOCTYPE html>
 <html lang="tr">
