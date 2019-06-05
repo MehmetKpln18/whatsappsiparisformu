@@ -1,4 +1,5 @@
 <?php 
+require('admin/baglantilar/database.php'); 
 $ayarlarcek = $conn -> prepare("SELECT * FROM ayarlar where id = 1");
 $ayarlarcek->bindParam(1, $_GET['id']);
 $ayarlarcek-> execute();
@@ -42,7 +43,7 @@ function SayfaGetir(){
 
 function Duyuru()
 {
-  require('database.php'); 
+  require('admin/baglantilar/database.php'); 
   $duyurularsorgu = $conn->prepare("SELECT * FROM duyurular order by ID desc limit 1");
   $duyurularsorgu->execute();
   while ($duyurularcikti = $duyurularsorgu->fetch()) {
