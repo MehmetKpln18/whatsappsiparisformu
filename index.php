@@ -8,14 +8,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title><?php echo $ayarlargoster['site_title']; ?></title>
-	<link rel="shortcut icon" type="image/png" href="<?=$h->get['base_url']?>/admin/assets/resim/favicon/<?php echo $ayarlargoster['site_favicon']; ?>"/>
+	<link rel="shortcut icon" type="image/png" href="admin/assets/resim/favicon/<?php echo $ayarlargoster['site_favicon']; ?>"/>
 	<meta name="description" content="<?php echo $ayarlargoster['site_description']; ?>">
 	<meta name="keywords" content="<?php echo $ayarlargoster['site_keywords']; ?>">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
-	<link rel="stylesheet" href="<?=$h->get['base_url']?>/admin/assets/css/sb-admin.css">
-	<link rel="stylesheet" href="<?=$h->get['base_url']?>/admin/assets/css/main.css">
-	<link rel="stylesheet" href="<?=$h->get['base_url']?>/admin/assets/vendor/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="<?=$h->get['base_url']?>/admin/assets/css/custom.css">
+	<link rel="stylesheet" href="admin/assets/css/sb-admin.css">
+	<link rel="stylesheet" href="admin/assets/css/main.css">
+	<link rel="stylesheet" href="admin/assets/vendor/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="admin/assets/css/custom.css">
 	<?php echo $ayarlargoster['site_analytics']; ?>
 </head>
 <body id="page-top" class="theme-purple">
@@ -26,8 +26,8 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav">
-				<li class="active"><a href="<?=$h->get['base_url']?>/?sayfa=anasayfa" class="nav-link" title="Ana Sayfa"><i class="fa fa-home"></i> Anasayfa</a></li>
-				<li><a href="<?=$h->get['base_url']?>/?sayfa=destekolustur" class="nav-link" title="Destek Talebi"><i class="fas fa-life-ring"></i> Destek Talebi</a></li>
+				<li class="active"><a href="?sayfa=anasayfa" class="nav-link" title="Ana Sayfa"><i class="fa fa-home"></i> Anasayfa</a></li>
+				<li><a href="?sayfa=destekolustur" class="nav-link" title="Destek Talebi"><i class="fas fa-life-ring"></i> Destek Talebi</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -60,9 +60,9 @@
 		<a href="#page-top" class="scroll-to-top rounded" title="Yukarı Çık">
 			<i class="fas fa-angle-up"></i>
 		</a>
-		<script src="<?=$h->get['base_url']?>/admin/assets/js/sb-admin.min.js"></script>
-		<script src="<?=$h->get['base_url']?>/admin/assets/vendor/jquery/jquery.min.js"></script>
-		<script src="<?=$h->get['base_url']?>/admin/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
-		<script src="<?=$h->get['base_url']?>/admin/assets/js/custom.js"></script>
+		<script src="admin/assets/js/sb-admin.min.js"></script>
+		<script src="admin/assets/vendor/jquery/jquery.min.js"></script>
+		<script src="admin/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+		<script src="admin/assets/js/custom.js"></script>
 	</body>
 	</html>
