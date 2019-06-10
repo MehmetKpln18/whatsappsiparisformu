@@ -178,7 +178,7 @@ while($i<$kac_sayi_uretilecek)
     </div>
   </div>
 
-  <script language=javascript>
+  <script language="javascript">
     function OnButton1()
     {
       document.Form1.action = "siparis.php"
