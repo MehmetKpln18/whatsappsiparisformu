@@ -7,7 +7,7 @@
 #customers-testimonials .item-details h5 { margin: 0 0 15px; font-size: 18px; line-height: 18px }
 #customers-testimonials .item-details h5 span { float: right }
 #customers-testimonials .item-details p { font-size: 14px }
-#customers-testimonials .item { text-align: center; margin-bottom: 80px }
+#customers-testimonials .item { text-align: center;}
 .owl-carousel .owl-nav [class*='owl-'] { transition: all .3s ease }
 .owl-carousel .owl-nav [class*='owl-'].disabled:hover { background-color: #D6D6D6 }
 .owl-carousel { position: relative }
