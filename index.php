@@ -37,26 +37,27 @@
 				<?php Duyuru(); ?>
 			</div>
 			<?php SayfaGetir(); ?>
-			<footer class="sticky-footer2">
-				<div class="container my-auto">
-					<div class="copyright my-auto">
-						<div class="row">
-							<div class="col-lg-6 col-sm-12 pt-3">
-								<span><?php echo $ayarlargoster['site_copright']; ?></span>
-							</div>
-							<div class="col-lg-6 col-sm-12 text-right">
-								<div class="sosyal">
-									<a href="<?php echo $ayarlargoster['site_facebook']; ?>" title="Facebook'tan Takip Et"><span>Facebook</span></a>
-									<a href="<?php echo $ayarlargoster['site_twitter']; ?>" title="Twitter'dan Takip Et"><span>Twitter</span></a>
-									<a href="<?php echo $ayarlargoster['site_instagram']; ?>" title="İnstagram'dan Takip Et"><span>İnstagram</span></a>
-									<a href="<?=$h->get['base_url']?>/admin" title="Admin Paneli"><span>Admin</span></a>
-								</div>
-							</div>
+		</div>
+	</div>
+	<footer class="sticky-footer2">
+		<div class="container my-auto">
+			<div class="copyright my-auto">
+				<div class="row">
+					<div class="col-lg-6 col-sm-12 pt-3">
+						<span><?php echo $ayarlargoster['site_copright']; ?></span>
+					</div>
+					<div class="col-lg-6 col-sm-12 text-right">
+						<div class="sosyal">
+							<a href="<?php echo $ayarlargoster['site_facebook']; ?>" title="Facebook'tan Takip Et"><span>Facebook</span></a>
+							<a href="<?php echo $ayarlargoster['site_twitter']; ?>" title="Twitter'dan Takip Et"><span>Twitter</span></a>
+							<a href="<?php echo $ayarlargoster['site_instagram']; ?>" title="İnstagram'dan Takip Et"><span>İnstagram</span></a>
+							<a href="<?=$h->get['base_url']?>/admin" title="Admin Paneli"><span>Admin</span></a>
 						</div>
 					</div>
 				</div>
-			</footer>
+			</div>
 		</div>
+	</footer>
 		<a href="#page-top" class="scroll-to-top rounded" title="Yukarı Çık">
 			<i class="fas fa-angle-up"></i>
 		</a>
