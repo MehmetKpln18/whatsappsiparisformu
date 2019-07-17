@@ -61,9 +61,12 @@
 		<a href="#page-top" class="scroll-to-top rounded" title="Yukarı Çık">
 			<i class="fas fa-angle-up"></i>
 		</a>
-		<script src="admin/assets/js/sb-admin.min.js"></script>
 		<script src="admin/assets/vendor/jquery/jquery.min.js"></script>
-		<script src="admin/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+		<script src="admin/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="admin/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+		<script src="admin/assets/js/sb-admin.min.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
 		<script src="admin/assets/js/custom.js"></script>
 	</body>
 	</html>
