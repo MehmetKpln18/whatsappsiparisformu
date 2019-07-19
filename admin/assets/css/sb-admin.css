@@ -10725,7 +10725,6 @@ footer.sticky-footer2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
   right: 0;
   bottom: 0;
   width: 100%;
@@ -10770,7 +10769,7 @@ div.sosyal a {
   border-radius:4px;
   text-align:center;
   text-decoration:none;
-  font-family:"Font Awesome 5 Brands";
+  font-family:fontawesome;
   position: relative;
   display: inline-block;
   width:36px;
@@ -10834,7 +10833,7 @@ div.sosyal a:hover span {
 /* font awesome icons */
 
 div.sosyal a:nth-of-type(1):before {
-content:'\f39e';
+content:'\f09a';
 }
 div.sosyal a:nth-of-type(2):before {
 content:'\f099';
@@ -10843,5 +10842,5 @@ div.sosyal a:nth-of-type(3):before {
 content:'\f16d';
 }
 div.sosyal a:nth-of-type(4):before {
-content:'A';
+content:'\f013';
 }
