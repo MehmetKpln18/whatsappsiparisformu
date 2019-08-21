@@ -12,9 +12,9 @@ Son Güncellemeler
 
 -> Kısmı site hızı iyileştirmeleri yapıldı.
 
-Site Demo: https://www.mehmetkaplan.net/calismalar/
+Site Demo: https://bc.vc/YKLnA4M
 
-Admin Demo: https://www.mehmetkaplan.net/calismalar/admin/
+Admin Demo: https://bc.vc/9JqlULx
 
 Admin Giriş Bilgileri
 
