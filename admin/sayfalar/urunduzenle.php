@@ -31,17 +31,26 @@ if (isset($_POST["Gonder"])) {
   $urunbaslik = $_POST['urunbaslik'];
   $urunicerik = $_POST['urunicerik'];
   $urunfiyat = $_POST['urunfiyat'];
+  $urunstok = $_POST['urunstok'];
   $temp = explode(".", $_FILES["urunresim"]["name"]);
   $newfilename = round(microtime(true)) . '.' . end($temp);
-  move_uploaded_file($_FILES["urunresim"]["tmp_name"], "assets/resim/" . $newfilename);
+  $urunresimtemp = $_FILES["urunresim"]["tmp_name"];
   $urunresim = $newfilename;
-  $guncelle = $conn -> prepare("UPDATE urunler SET urunbaslik=:urunbaslik, urunicerik=:urunicerik, urunfiyat=:urunfiyat, urunresim=:urunresim WHERE id=:id");
+  if($urunresimtemp != "")
+  {
+    move_uploaded_file($urunresimtemp, "assets/resim/" . $newfilename);
+    $guncelle = $conn -> prepare("UPDATE urunler SET urunbaslik=:urunbaslik, urunicerik=:urunicerik, urunfiyat=:urunfiyat, urunstok=:urunstok, urunresim=:urunresim WHERE id=:id");  
+    $guncelle->bindParam(':urunresim', $urunresim);
+  }else {
+    $guncelle = $conn -> prepare("UPDATE urunler SET urunbaslik=:urunbaslik, urunicerik=:urunicerik, urunfiyat=:urunfiyat, urunstok=:urunstok WHERE id=:id");
+
+  }
   $guncelle->bindParam(':id', $ids);
   $guncelle->bindParam(':urunbaslik', $urunbaslik);
   $guncelle->bindParam(':urunicerik', $urunicerik);
   $guncelle->bindParam(':urunfiyat', $urunfiyat);
-  $guncelle->bindParam(':urunresim', $urunresim);
-  $guncelle-> execute(); 
+  $guncelle->bindParam(':urunstok', $urunstok);
+  $guncelle-> execute();
   if($guncelle){
     $mesaj = '<meta http-equiv="refresh" content="2;URL=?sayfa=urunler">
     <div class="alert alert-dismissible alert-success">
