@@ -11,13 +11,12 @@ if($_POST)
   $password=$_POST["password"];
   if(!empty($kullaniciadi) && !empty($password))
   {
-    $sorgu=$conn->prepare("SELECT * FROM yoneticiler WHERE kullaniciadi=? and password=? and aciklama=? or aciklama=?");
-    $sorgu->execute(array($kullaniciadi,$password,"Admin","Demo"));
+    $sorgu=$conn->prepare("SELECT * FROM yoneticiler WHERE kullaniciadi=? and password=?");
+    $sorgu->execute(array($kullaniciadi,$password));
     $islem=$sorgu->fetch();
     if($islem)
     {
       $_SESSION['yonetici'] = $islem['id'];
-      $_SESSION['aciklama'] = $islem['aciklama'];
       header("Location: index.php?sayfa=anasayfa");
       $uyari = '<div class="alert alert-dismissible alert-success"><button type="button" class="close" data-dismiss="alert">×</button><strong>Başarı:</strong> Yönlendiriliyorsunuz.</div>';
     }
@@ -32,7 +31,6 @@ if($_POST)
   }
 } 
 ?>
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -45,7 +43,6 @@ if($_POST)
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="assets/css/sb-admin.css" rel="stylesheet">
 </head>
-
 <body class="bg-dark">
   <div class="container">
     <div class="card card-login mx-auto mt-5">
@@ -59,14 +56,14 @@ if($_POST)
           </div>
           <div class="form-group">
             <div class="form-label-group">
-              <input type="text" name="kullaniciadi" id="kullaniciadi" class="form-control" value="demo">
-              <label>Kullanıcı Adı</label>
+              <input type="text" name="kullaniciadi" id="kullaniciadi" class="form-control">
+              <label for="inputEmail">Kullanıcı Adı</label>
             </div>
           </div>
           <div class="form-group">
             <div class="form-label-group">
-              <input type="password" name="password" id="password" class="form-control" value="demo">
-              <label>Şifre</label>
+              <input type="password" name="password" id="password" class="form-control">
+              <label for="inputPassword">Şifre</label>
             </div>
           </div>
           <input type="submit" class="btn btn-success btn-block" value="Giriş Yap"> 
@@ -81,10 +78,8 @@ if($_POST)
       </div>
     </div>
   </div>
-
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
-
 </body>
 </html>
